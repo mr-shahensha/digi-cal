@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+:root{
+    --main-bg:teal; 
+    --buttonText-bg:rgb(0,0,0);
+    --view-bg:white;
+    --deve:rgb(217, 255, 0);
+    --buttonback:radial-gradient(rgb(92, 196, 196),rgb(82, 165, 165));
+  }
+  
+  [data-theme="dark"]{
+    --view-bg:rgb(0, 0, 0);
+    --deve:rgb(255, 255, 255);
+    --main-bg:rgb(2, 5, 29);
+    --buttonText-bg:rgb(75, 49, 49);
+    --buttonback:rgb(253, 253, 253);
+  }
+  body{
+    background-color:var(--main-bg);}
+#num{
+    background:var(--buttonback);
+    width: 40px;
+    height: 35px;
+     margin: 5px;
+     box-shadow: 5px 8px 8px rgba(0, 0, 0,0.5);
+     font-size: 25px;
+}
+#operator{
+    background-color: rgb(92, 196, 196);
+    width: 35px;
+    height: 30px;
+    font-size: 20px;
+    margin: 2px;
+}
+
+#result{
+    height: 40px;
+  
+  
+}
+
+.view input{
+    background-color:var(--view-bg);
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.main td {
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255) ;
+    
+}
+.main input{
+    border-radius: 20px;
+}
+.opa{
+  background-color: transparent;
+}
+
+
+#operator1{
+    background-color: rgb(21, 177, 177);
+    width: 35px;
+    height: 30px;
+    font-size: 20px;
+    margin: 5px;
+}
+.c,.numb,.view{
+background-color: transparent;
+}
+#backspace{
+    background-color: rgb(92, 196, 196);
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 5px;
+}
+.main {
+  margin: 4%;
+   color:rgb(0, 255, 13);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 50px;
+    margin-right: 12px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    background-color: rgb(11, 145, 255);
+    content: "";
+    bottom: -5px;
+    height: 26px;
+    right: 25px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: rgba(255, 255, 255, 0.315);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+input{
+    outline: none;
+    border: none;
+    color:var(--buttonText-bg);
+}
+td{
+    background-color: var(--buttonback);
+}
+.whole
+{
+  position: relative;
+  background: rgba(255,255,255,0);
+  border-radius: 6px;
+  margin-top: 0;
+  width:300px;
+  height: 400px;
+  margin-left: 40%;
+  z-index: 10;
+  backdrop-filter: blur(30px);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-left:1px solid rgba(255,255,255,0.2);
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2); 
+}
+
+@media screen and (max-width: 600px){
+
+   .main{
+       margin-right: 40px;
+   }
+   .whole{
+    margin-left: 5%;
+    margin-top: 40px;
+   }
+}
